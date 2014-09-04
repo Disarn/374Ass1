@@ -10,14 +10,14 @@ package Digital;
  *
  * @author Cable
  */
-public class NOTGate extends BinaryGate {
+public class NOTGate extends UnaryGate {
         
     public NOTGate() {
         super("images/NOT.gif");
     }
     
     @Override
-    protected boolean recompute(boolean a, boolean b) {
+    protected boolean recompute(boolean a) {
         return !a;
     }
     

@@ -10,14 +10,14 @@ package Digital;
  *
  * @author Cable
  */
-public class Pin extends BinaryGate {
+public class Pin extends UnaryGate {
         
     public Pin() {
         super("images/PIN.gif");
     }
     
     @Override
-    protected boolean recompute(boolean a, boolean b) {
+    protected boolean recompute(boolean a) {
         return a;
     }
 }
